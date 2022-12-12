@@ -25,6 +25,7 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
 header p {
     padding-left: 14%;
     font-family: 'VT323', monospace;
@@ -84,7 +85,7 @@ h2 {
     border: 2px solid #F7BA17;
     border-radius: 5px;
     padding: 5px;
-    text-align: right;
+    text-align: center;
     padding-left: 20px;
     font-family: 'VT323', monospace;
     font-size: 25px;
@@ -218,12 +219,67 @@ p.name {
 
 }
 
-@media (max-width: 768px){
+/* Dar estilo por mediaqueries tamaño tablet - ipad air*/
+@media (max-width: 768px) {
     h1 {
         font-size: 40px;
     }
+
     header p {
         padding-left: 19%;
         font-size: 25px;
+    }
+}
+
+/* Dar estilo por mediaqueries tamaño celular - samsung galaxy s8+ */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 30px;
+        margin-left: 13px;
+
+    }
+
+    header p {
+        padding-left: 27%;
+        font-size: 20px;
+    }
+
+    #staticCalculation {
+        margin: 20px;
+        padding: 10px;
+        column-gap: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    .searchButtons {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Dar estilos a las tarjetas */
+    .pokemonCard {
+        border-radius: 7px;
+        border-width: 3px;
+        width: 120px;
+        height: 170px;
+        padding: 10px;
+    }
+
+    .pokemonCard img{
+        height: 70px;
+        width: 70px;
+    }
+    /* Dar estilos a la descripción de las tarjetas */
+    p.name {
+        text-align: left;
+        margin-left: 10%;
+        line-height: 25px;
+        font-size: 20px;
+
     }
 }
