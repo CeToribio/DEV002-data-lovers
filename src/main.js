@@ -1,10 +1,16 @@
-import { filter, sortUpward, sortDownward, calculatePercentage,generations, types } from './data.js';
+import { filter, sortUpward, sortDownward, calculatePercentage, generations, types } from './data.js';
 
 // import data from './data/lol/lol.js';
 // import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 //Llama a la primera coincidencia con el id containerPokemon del archivo HTML
+const imgContainer = document.querySelector(".imgContainer");
+const startButton = document.querySelector("#startButton");
+const content = document.querySelector("#content");
+// const staticCalculation = document.querySelector("#staticCalculation");
+// const searchButtons = document.querySelector("#searchButtons");
+// const addedCalculation = document.querySelector("#addedCalculation");
 const container = document.querySelector("#containerPokemon");
 const search = document.querySelector("#searchInput");
 const buttonUpward = document.querySelector("#buttonUpward");
@@ -18,6 +24,13 @@ const percentagePokemons = document.querySelector("#percentagePokemons");
 const numberPokemonsStatic = document.querySelector("#numberPokemonsStatic");
 const numberGenerations = document.querySelector("#numberGenerations");
 const numberTypes = document.querySelector("#numberTypes");
+
+
+startButton.addEventListener('click', () => {
+    imgContainer.style.display = "none";
+    content.style.display = "block";
+})
+
 
 //Función para llamar al set de datos de la API de Pokémon
 fetch("https://raw.githubusercontent.com/Laboratoria/DEV002-data-lovers/main/src/data/pokemon/pokemon.json")
@@ -153,9 +166,9 @@ function numberUpward(pokemon) {
 }
 
 //Crear función que ordenen descendentemente por número
-function numberDownward (pokemon){
+function numberDownward(pokemon) {
     buttonDownNumber.addEventListener("click", () => {
-        const newArray = sortDownward(pokemon,"num");
+        const newArray = sortDownward(pokemon, "num");
         // console.log(newArray);
         container.innerHTML = "";
         newArray.forEach(element => {
@@ -165,18 +178,18 @@ function numberDownward (pokemon){
 }
 
 // Crear función de cantidad de pokemones de la data
-function pokemonStatic(pokemon){
+function pokemonStatic(pokemon) {
     numberPokemonsStatic.innerHTML = pokemon.length
 }
 
 //Crear función para obtener el número de generaciones
-function generationsNumber(pokemon){
-    const newArray = generations(pokemon,"generation","num");
+function generationsNumber(pokemon) {
+    const newArray = generations(pokemon, "generation", "num");
     numberGenerations.innerHTML = newArray.length
 }
 
 //Crear función para obtener número de tipos de los pokemons
-function typeNumber(pokemon){
+function typeNumber(pokemon) {
     const newArray = types(pokemon);
     numberTypes.innerHTML = newArray
 }

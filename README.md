@@ -7,6 +7,7 @@
 * [3. Planteamiento del problema](#3-planteamiento-del-problema)
 * [4. Objetivos](#4-objetivos)
 * [5. Investigación UX](#5-investigación-ux)
+* [6. Diseñovde la Interfaz de Usuario (UI)](#6-diseño-de-la-interfaz-de-usuario-(ui))
 
 ***
 
@@ -14,7 +15,7 @@
 
 Página web informativa sobre Pokémon dedicada a fans de las dos primeras generaciones con uso de una API.
 
-## 2. Resumen del proyecto
+## 2. Introducción
 
 Pokémon (ポケモン) es una franquicia de medios que originalmente comenzó como un videojuego RPG, pero debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de televisión, películas, juegos de cartas, ropa, entre otros, convirtiéndose en una marca reconocida en el mercado mundial. 
 La primera generación de Pokémon transcurre en la región de Kanto, por lo que el nombre de esta región suele verse asociado a estos videojuegos de la primera generación. El número de pokémon de estas versiones es de 151, desde Bulbasaur hasta Mew.
