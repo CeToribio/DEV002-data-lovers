@@ -22,11 +22,6 @@ Por su parte, la segunda generación, aparece una nueva región conocida como Jo
 
 Al respecto, este 11 de noviembre de 2022 Ash Ketchum finalmente se coronó como Campeón Mundial de Pokémon, 25 años después de iniciar su viaje. Por esta razón el equipo del presente proyecto decidió conmemorar este logro creando una aplicación dedicada a los fans de las primeras generaciones quienes han acompañado a Ash en esta aventura hasta convertirse en el campeón mundial de Pokémon. 
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
-
-
 ## 3. Planteamiento del problema
 
 Pokémon GO es un videojuego de realidad aumentada basado en la localización para dispositivos iOS y Android.​ De esta manera, en 2022  se registraron más de 23 millones de descargas. Por otro lado, no solo existen fans de este videojuego sino también de las diferentes versiones de Nintendo, de la serie y de los artículos físicos vendidos como los álbumes. 
@@ -68,24 +63,48 @@ Crear una página web informativa sobre Pokémon dedicada a fans de las dos prim
 
 ### 5.2.	Historias de Usuario
 
+#### 5.2.1 HISTORIA DE USUARIO UNO
 
+![historia-de-usuario-1](./src/img/HU_1.PNG)
 
+#### 5.2.2 HISTORIA DE USUARIO DOS
 
+![historia-de-usuario-2](./src/img/HU_2.PNG)
+
+#### 5.2.3 HISTORIA DE USUARIO TRES
+
+![historia-de-usuario-3](./src/img/HU_3.PNG)
+
+#### 5.2.4 HISTORIA DE USUARIO CUATRO
+
+![historia-de-usuario-4](./src/img/HU_4.PNG)
+
+#### 5.2.5 HISTORIA DE USUARIO CINCO
+
+![historia-de-usuario-5](./src/img/HU_5.PNG)
+
+#### 5.2.6 HISTORIA DE USUARIO SEIS
+
+![historia-de-usuario-6](./src/img/HU_6.PNG)
+
+#### 5.2.7 HISTORIA DE USUARIO SIETE
+
+![historia-de-usuario-7](./src/img/HU_7.PNG)
 
 ## 6.	Diseño de la Interfaz de Usuario (UI)
 La interfaz permite al usuario:
 
  * Visualizar las imágenes y los datos de cada Pokémon.
- * Filtrar los datos (SSSSSSSSSSSSSSSSSSSSSSSSS).
- * Ordenar los datos (SSSSSSSSSSSSSSSSSSSSSSSSS).
- * Realizar y mostrar un cálculo.
+ * Filtrar los datos con la ayuda de un buscador.
+ * Ordenar los datos de manera alfabética y numérica a través de un botón que contiene estas opciones.
+ * Mostrar cálculos estáticos y dinámicos(según el buscador).
 
 ### 6.1.	Prototipo de baja fidelidad
  
-i. [IMAGEN PROTOTIPO DE BAJA FIDELIDAD]
+![prototipo-baja-fidelidad](./src/img/prototipodebajafidelidad.PNG)
 
 ### 6.2.	Prototipo de alta fidelidad
  
-	i. [IMAGEN PROTOTIPO DE ALTA FIDELIDAD]
+![prototipo-alta-fidelidad](./src/img/prototipodealtafidelidad.PNG)
  
   iv. Pedimos feedback de nuestras compañeras siendo ellas las usuarios finales de nuestro producto (fans de pokemon), 
