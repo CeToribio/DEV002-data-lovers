@@ -26,6 +26,7 @@ h1 {
     padding-bottom: 0px;
 }
 
+/* Dar estilos al eslogan de Pokélovers */
 header p {
     padding-left: 14%;
     font-family: 'VT323', monospace;
@@ -33,6 +34,7 @@ header p {
     font-size: 30px;
 }
 
+/* Dar estilos al contenedor de la imagen de la portada */
 .imgContainer {
     display: flex;
     flex-direction: column;
@@ -42,6 +44,7 @@ header p {
     padding-top: 2%;
 }
 
+/* Dar estilos a la imagen de la portada */
 .imgContainer img {
     /* width: 366px;
     height: 375px; */
@@ -49,7 +52,7 @@ header p {
     height: 90%;
 }
 
-
+/* Dar estilos al boton START */
 .imgContainer button {
     font-family: 'VT323', monospace;
     font-size: 30px;
@@ -63,8 +66,34 @@ header p {
     border-radius: 5px;
 }
 
+/* Ocultar la segunda seccion, donde se encuentra la data*/
 #content {
     display: none;
+}
+
+/* Dar estilos al contenedor del boton para regresar al home */
+.returnButtonContainer {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+/* Dar estilos al boton para regresar al home */
+#returnButton {
+    background-color: transparent;
+    border-color: #F7BA17;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Dar estilos a la imagen del boton home */
+#returnButton img {
+    width: 90%;
+    height: 90%;
 }
 
 /* Dar estilo al nombre de los cálculos estáticos*/
@@ -255,40 +284,87 @@ p.name {
 
 /* Dar estilo por mediaqueries tamaño tablet - ipad air*/
 @media (max-width: 768px) {
+    /* POKELOVERS */
     h1 {
-        font-size: 40px;
+        font-size: 60px;
+        margin-top: 10%;
     }
 
+    /* SLOGAN POKELOVERS */
     header p {
         padding-left: 19%;
         font-size: 25px;
+
+    }
+
+    /* Contenedor de la imagen de portada */
+    .imgContainer {
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        padding-top: 2%;
+        /* border: 2px solid white; */
+    }
+
+    /* botón start */
+    .imgContainer button {
+        font-size: 50px;
+        height: 100px;
+        margin-top: 20%;
+        border: 5px solid #498FCD;
+        border-radius: 6px;
     }
 }
 
 /* Dar estilo por mediaqueries tamaño celular - samsung galaxy s8+ */
 @media (max-width: 360px) {
+    /* encabezado, pokelovers */
     h1 {
         font-size: 30px;
         margin-left: 13px;
 
     }
 
+    /* eslogan de pokelovers */
     header p {
         padding-left: 27%;
         font-size: 20px;
     }
 
+    /* contenedor de la img de portada */
+    .imgContainer {
+        width: 300px;
+        height: 300px;
+        margin-top: 25%;
+        padding-top: 2%;
+        /* border: 2px solid white; */
+    }
+
+    /* boton start */
+    .imgContainer button {
+        font-size: 40px;
+        height: 90px;
+        margin-top: 35%;
+        border: 3px solid #498FCD;
+        border-radius: 6px;
+    }
+
+    /* cálculos estáticos */
     #staticCalculation {
         margin: 20px;
         padding: 10px;
         column-gap: 15px;
     }
 
+    /* títulos de los cálculos estáticos */
     h2 {
         font-size: 25px;
         font-weight: lighter;
     }
 
+    /* contenedor del input search y sort */
     .searchButtons {
         width: 85%;
         margin-left: auto;
@@ -304,10 +380,12 @@ p.name {
         padding: 10px;
     }
 
-    .pokemonCard img{
+    /* Dar estilo a las imágenes de las tarjetas */
+    .pokemonCard img {
         height: 70px;
         width: 70px;
     }
+
     /* Dar estilos a la descripción de las tarjetas */
     p.name {
         text-align: left;

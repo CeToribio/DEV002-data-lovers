@@ -12,6 +12,7 @@
   <!-- Encabezado -->
   <header>
     <h1>Pokélovers</h1>
+    <!-- slogan de encabezado -->
     <p>for first generations fans</p>
   </header>
   <main>
@@ -22,7 +23,10 @@
     </section>
     <!-- Segunda seccion principal-->
     <section id="content">
-      <button id="returnButton" onclick="window.location.reload()">Home</button>
+      <!-- boton para volver a la portada -->
+      <div class="returnButtonContainer">
+      <button id="returnButton" onclick="window.location.reload()"><img src="./img/back.png" alt="backtohome"></button>
+      </div>
       <!-- Cálculos Estáticos -->
       <section id="staticCalculation">
         <div>
@@ -55,7 +59,7 @@
           </section>
         </section>
       </section>
-
+      <!-- Cálculos agregados(dinámicos) -->
       <section class="addedCalculation">
         <p id="wordsWatching">You're watching</p>
         <div class="results">

@@ -1,16 +1,10 @@
 import { filter, sortUpward, sortDownward, calculatePercentage, generations, types } from './data.js';
 
-// import data from './data/lol/lol.js';
-// import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 
 //Llama a la primera coincidencia con el id containerPokemon del archivo HTML
 const imgContainer = document.querySelector(".imgContainer");
 const startButton = document.querySelector("#startButton");
 const content = document.querySelector("#content");
-// const staticCalculation = document.querySelector("#staticCalculation");
-// const searchButtons = document.querySelector("#searchButtons");
-// const addedCalculation = document.querySelector("#addedCalculation");
 const container = document.querySelector("#containerPokemon");
 const search = document.querySelector("#searchInput");
 const buttonUpward = document.querySelector("#buttonUpward");
@@ -25,7 +19,7 @@ const numberPokemonsStatic = document.querySelector("#numberPokemonsStatic");
 const numberGenerations = document.querySelector("#numberGenerations");
 const numberTypes = document.querySelector("#numberTypes");
 
-
+// función para mostrar la segunda parte y ocultar la portada
 startButton.addEventListener('click', () => {
     imgContainer.style.display = "none";
     content.style.display = "block";
@@ -109,7 +103,7 @@ function createCard(pokemon) {
     card.style.backgroundColor = cardColor;
 }
 
-//Función para buscar los pokemones
+//Función para buscar los pokemones y cálculos agregados segun el buscador
 function searchPokemon(pokemon) {
     search.addEventListener("keyup", () => {
         const newArray = filter(pokemon, search.value);
@@ -177,6 +171,7 @@ function numberDownward(pokemon) {
     })
 }
 
+//Funciones de los cálculos estáticos
 // Crear función de cantidad de pokemones de la data
 function pokemonStatic(pokemon) {
     numberPokemonsStatic.innerHTML = pokemon.length
