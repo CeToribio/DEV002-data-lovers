@@ -33,6 +33,40 @@ header p {
     font-size: 30px;
 }
 
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+
+.imgContainer img {
+    /* width: 366px;
+    height: 375px; */
+    width: 90%;
+    height: 90%;
+}
+
+
+.imgContainer button {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    color: white;
+    height: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    background-color: transparent;
+    border: 2px solid #498FCD;
+    border-radius: 5px;
+}
+
+#content {
+    display: none;
+}
+
 /* Dar estilo al nombre de los cálculos estáticos*/
 h2 {
     font-size: 30px;
