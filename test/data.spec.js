@@ -6,7 +6,7 @@ const data1 = [{name:"bulbasaur", num:"001", generation:{num:"generation i"}, ty
 {name:"charmeleon", num:"005", generation:{num:"generation ii"}, type:["electric","grass"]}];
 const data2 = [{name:"bulbasaur", num:"001"},{name:"pikachu", num:"025"},{name:"charmander", num:"004"},{name:"charmander", num:"004"}];
 
-describe('Buscar/filtrar el input ingresado...', () => {
+describe('Buscar/filtrar el input ingresado', () => {
   it('is a function', () => {
     expect(typeof filter).toBe('function');
   });
